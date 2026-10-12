@@ -1,4 +1,4 @@
-# KOMITMEN KERJA
+# KOMITMEN
 
 Sebagai calon anggota tim, saya berkomitmen untuk bekerja secara bertanggung jawab, menjaga komunikasi yang baik, serta berkontribusi aktif dalam mencapai tujuan bersama. Berikut adalah komitmen kerja yang akan saya terapkan selama menjadi bagian dari tim.
 
