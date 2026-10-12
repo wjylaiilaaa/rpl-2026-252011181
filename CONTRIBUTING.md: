@@ -1,0 +1,76 @@
+Pedoman Pengembangan Repository
+
+Tentang Repository
+
+Repository ini merupakan tempat untuk mengelola berbagai berkas tugas dan hasil belajar yang berkaitan dengan mata kuliah Rekayasa Perangkat Lunak. Agar setiap perubahan dapat dilacak dan dikelola dengan baik, diperlukan aturan sederhana yang menjadi pedoman selama proses pengerjaan.
+
+Dokumen ini menjelaskan cara melakukan perubahan, menyimpan riwayat pekerjaan, dan mengajukan hasil perubahan agar tetap terorganisasi.
+
+1. Ruang Lingkup Perubahan
+
+Perubahan yang dilakukan sebaiknya memiliki tujuan yang jelas, misalnya melengkapi pembahasan tugas, memperbaiki isi dokumen, atau menambahkan referensi pendukung.
+
+Sebelum menyimpan perubahan, periksa kembali apakah isi yang ditambahkan sudah sesuai dengan topik dan apakah informasi sebelumnya masih diperlukan. Setiap perubahan diharapkan memberikan manfaat bagi kelengkapan dan kualitas repository.
+
+2. Membuat dan Mengelola Branch
+
+Untuk menjaga agar pengerjaan tetap teratur, gunakan branch tersendiri ketika mengerjakan perubahan. Branch main dipertahankan sebagai versi utama repository.
+
+Nama branch sebaiknya menggambarkan pekerjaan yang sedang dilakukan. Contohnya:
+
+docs/laporan-rpl untuk mengembangkan isi laporan.
+
+fix/kesalahan-format untuk memperbaiki format yang keliru.
+
+feature/materi-baru untuk menambahkan pembahasan baru.
+
+Pembuatan branch dapat dilakukan melalui terminal dengan perintah berikut:
+
+git switch main
+git pull origin main
+git switch -c docs/laporan-rpl
+
+Setelah branch dibuat, seluruh perubahan untuk pekerjaan tersebut dilakukan pada branch yang sesuai.
+
+3. Menyimpan Riwayat Perubahan
+
+Gunakan commit untuk mencatat setiap tahap pekerjaan yang telah dilakukan. Pesan commit perlu ditulis secara singkat, tetapi tetap menjelaskan perubahan yang disimpan.
+
+Format yang digunakan adalah:
+
+kategori: keterangan perubahan
+
+Contoh:
+
+git add README.md
+git commit -m "docs: complete repository description"
+
+Kategori yang dapat digunakan antara lain docs untuk dokumentasi, fix untuk perbaikan, feat untuk penambahan konten atau fitur, dan refactor untuk penataan ulang struktur.
+
+Simpan perubahan secara bertahap agar riwayat pekerjaan mudah dibaca dan setiap commit memiliki tujuan yang jelas.
+
+4. Mengirim dan Memeriksa Perubahan
+
+Setelah pekerjaan selesai, unggah branch ke GitHub dan ajukan Pull Request apabila perubahan akan digabungkan ke branch utama.
+
+git push -u origin docs/laporan-rpl
+
+Pull Request harus menjelaskan bagian yang diubah dan alasan perubahan tersebut dilakukan. Sebelum penggabungan, lakukan pemeriksaan terhadap isi file dan pastikan perubahan tidak menimbulkan masalah pada bagian lainnya.
+
+Jika repository dikerjakan bersama, mintalah anggota lain untuk meninjau perubahan. Jika dikerjakan secara individu, lakukan pemeriksaan mandiri sebelum menggabungkan perubahan ke main.
+
+5. Menangani Revisi
+
+Revisi merupakan bagian dari proses pengembangan. Apabila ditemukan kekeliruan, perbaiki bagian yang berkaitan tanpa mengubah bagian lain yang tidak diperlukan.
+
+Jika ada masukan dari reviewer, pahami terlebih dahulu maksudnya sebelum melakukan perbaikan. Apabila suatu perubahan berpotensi memengaruhi isi sebelumnya, periksa dampaknya agar hasil akhir tetap konsisten.
+
+6. Tanggung Jawab dalam Berkontribusi
+
+Setiap pekerjaan harus dilakukan dengan jujur dan memperhatikan kualitas hasilnya. Referensi yang digunakan perlu dicantumkan apabila diperlukan, dan kontribusi pihak lain harus dihargai.
+
+Selain itu, hindari mengunggah informasi rahasia, pastikan file yang dikirim memang diperlukan, serta jaga komunikasi tetap sopan ketika membahas perubahan atau memberikan masukan.
+
+Penutup
+
+Pengelolaan repository yang baik dimulai dari kebiasaan sederhana, seperti menggunakan branch yang tepat, menulis commit secara jelas, dan memeriksa perubahan sebelum diterapkan. Dengan pedoman ini, proses pengerjaan dan pengelolaan berkas diharapkan menjadi lebih tertib, mudah ditelusuri, dan dapat dipertanggungjawabkan.
